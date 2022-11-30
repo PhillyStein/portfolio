@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.hero img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 40%;
+    position: absolute;
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.title {
+    font-family: 'Courier New', monospace;
+    position: relative;
+    color: #fff;
+    font-size: 4rem;
+    left: 1rem;
+}
+
+.subtitle {
+    font-family: 'Courier New', monospace;
+    position: relative;
+    color: #fff;
+    font-size: 2.2rem;
+    left: 1rem;
+}
+
+.navbar {
+    font-family: 'Courier New', monospace;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.page {
+    font-family: 'Courier New', monospace;
+    width: 50%;
+    height: 32rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    position: absolute;
+    left: 25%;
+    top: 10rem;
+}
+
+.page-heading {
+    margin: 1rem 1rem 1rem 1rem;
+    font-size: 1.2rem;
+}
+
+hr {
+    height: 2px;
+    border-width:0;
+    color: #bababa;
+    background-color: #bababa;
+}
+
+.page-content {
+    margin: 1rem 1rem 1rem 1rem;
+    font-size: 1rem;
+}
+
+.zoom-in, .zoom-out {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(329deg) brightness(101%) contrast(102%);
+    height: 2rem;
+    width: 2rem;
+}
+
+.zoom {
+    position: absolute;
+    right: 0.6rem;
+    top: 0.6rem;
+    display: flex;
+    justify-content: right;
+    cursor: pointer;
+}
+
+.slider {
+    margin-top: 0.5rem;
+    overflow: hidden;
+    -webkit-appearance: none;
+    height: 15px;
+    border-radius: 50px;  
+    background: #868686;
+    cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    box-shadow: -208px 0 0 200px #718296;
+    border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+@media screen and (max-width: 430px) {
+    .navbar {
+        position: relative;
+        top: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .title, .subtitle, .navbar{
+        left: 0;
+        text-align: center;
+    }
+    
+    .page {
+        height: 24rem;
+        width: 90%;
+        left: 5%;
+        top: 18rem;
+    }
+}
+
+@media screen and (min-width: 430px) and (max-width: 800px) {
+    .navbar {
+        position: relative;
+        top: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .title, .subtitle, .navbar{
+        left: 0;
+        text-align: center;
+    }
+    
+    .page {
+        height: 30rem;
+        width: 70%;
+        left: 15%;
+        top: 12rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .navbar {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+}
+
+.navbar ul li {
+    display: inline;
+    cursor: pointer;
+    text-shadow: 0 0 4px #000;
+    padding: 0.2rem 0.6rem 0.2rem 0.6rem; 
+    /*
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 0.1rem solid #fff;
+    */
+}
+
+.navbar ul li:hover {
+    text-shadow: 0 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* background-color: rgba(0, 0, 0, 0.8); */
+}
+
+.credits {
+    color: #fff;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.credits a {
+    color: #868686;
+    text-decoration: none;
+}
